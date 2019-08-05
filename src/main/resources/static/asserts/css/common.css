@@ -1,0 +1,161 @@
+body, html { 
+    overflow-x: hidden; 
+    overflow-y: auto;
+}
+.border-none{
+	border:none !important;
+}
+.background-color-none{
+	background-color: inherit !important;
+}
+.img-left{
+	width: 70xp;
+	height: 70px;
+}
+.img-user{
+	width: 25xp;
+	height: 25px;
+}
+.tag{
+	padding: 0.5rem !important;
+	 line-height:120%;
+}
+.sty{
+	border-color: #28a745;
+	color:  #28a745;
+}
+.img-size{
+	width: 1600px;
+	height: 60%;
+	max-height: 1600px;
+	max-height: 500px;
+}
+.list-group .pad{
+	
+	padding-top: 10px;
+	padding-bottom: 10px;
+	
+}
+.font-weight-bold{
+	font-size : 20px;
+	font-style: inherit;	
+	color: black;
+}
+.font-weight-bold-18{
+	font-size : 18px;
+	font-style: inherit;	
+	color: black;
+}
+.font-weight-bold-15{
+	font-size : 15px;
+	font-style: inherit;	
+	color: black;
+}
+.font-size-13{
+	font-size : 13px;
+}
+.font-sty{
+	font-size : 16px !important;
+	color: #918bca;
+}
+.text-center{
+	text-align: center;
+}
+
+.color-title{
+ 	background-color: #34a40; 
+}
+.color-bff{
+ 	color:#007bff;
+}
+.color-black{
+ 	color:black;
+}
+.color-hui{
+ 	color:#c0c0c0;
+}
+.color-hui-2{
+ 	color:#6c7592;
+}
+
+.img-size-50{
+	width: 50px; 
+	height: 50px;
+}
+.img-size-70{
+	width: 70px; 
+	height: 70px;
+}
+
+.magin-top{
+	margin-top: 10px;
+}
+.magin-left-10{
+	margin-left:10px;
+}
+.magin-left-20{
+	margin-left: 20px;
+}
+.magin-left-20{
+	margin-left: 20px;
+}
+.magin-left-30{
+	margin-left: 30px;
+}
+.magin-left-40{
+	margin-left: 40px;
+}
+.magin-left-50{
+	margin-left: 50px;
+}
+.magin-right-10{
+	margin-right:10px;
+}
+.magin-right-25{
+	margin-right:25px;
+}
+.padding-top{
+	padding-top: 10px;
+}
+.padding-bottom{
+	padding-bottom: 10px;
+}
+.padding-bottom-20{
+	padding-bottom: 20px;
+}
+.padding-bottom-40{
+	padding-bottom: 40px;
+}
+.padding-bottom-50{
+	padding-bottom: 50px;
+}
+.magin-top-20{
+	margin-top: 20px;
+}
+.magin-top-30{
+	margin-top: 30px;
+}
+.magin-top-40{
+	margin-top: 40px;
+}
+.magin-top-50{
+	margin-top: 50px;
+}
+.pointer{
+	cursor:pointer;
+}
+.border-none{
+	border:none;
+}
+.border-bootom{
+	border-bottom: 1px solid #F5F5F5;
+}
+.border-top{
+	border-top: 1px solid #DDDDDD;
+}
+.hover-blue:hover{
+	color:blue;
+}
+.hover-red:hover{
+	color:red;
+}
