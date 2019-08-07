@@ -1,14 +1,19 @@
 #应用web端口
 server:
-  port: 8080
+  port: 8081
 
 #数据库配置
 spring:
   datasource:
-    driver-class-name: com.mysql.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/blog?useUnicode=true&characterEncoding=utf8&useSSL=false&autoReconnect=true&failOverReadOnly=false&rewriteBatchedStatements=true
-    data-username: blog_all
-    data-password: 123456a
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/blog?useUnicode=true&characterEncoding=utf8&useSSL=false&autoReconnect=true&failOverReadOnly=false&rewriteBatchedStatements=true&serverTimezone=UTC
+    username: blog_all
+    password: "123456a"
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    database: mysql
 
 # 设定ftl文件路径
   freemarker:

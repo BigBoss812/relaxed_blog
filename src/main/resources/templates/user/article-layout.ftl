@@ -1,6 +1,6 @@
-<#import "/layout/inc.ftl" as inc>
-<#import "/layout/nav.ftl" as nav>
-<#import "./layout/message-js.ftl" as message>
+<#import "../layout/inc.ftl" as inc>
+<#import "../layout/nav.ftl" as nav>
+<#import "../layout/message-js.ftl" as message>
 
 
 <#macro artAdd>
@@ -55,7 +55,7 @@
 	</div>
  
  
-	<#include "/layout/footer.ftl">
+	<#include "../layout/footer.ftl">
 </body>
 <@inc.script>
  <!-- 注意， 只需要引用 JS，无需引用任何 CSS ！！！-->

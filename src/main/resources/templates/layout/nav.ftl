@@ -12,7 +12,7 @@
 							class="icon-bar"></span><span class="icon-bar"></span><span
 							class="icon-bar"></span>
 					</button>
-					<a class="navbar-brand" href="/"><span class="glyphicon glyphicon-home"></span>&nbsp;Spring Monkey</a>
+					<a class="navbar-brand" href="/"><span class="glyphicon glyphicon-home"></span>&nbsp;Big Boss</a>
 				</div>
 
 				<div class="collapse navbar-collapse"
@@ -36,16 +36,16 @@
 								<li><a href="/user/article/publish">文章</a></li>
 								<li><a href="/user/question/publish">问答</a></li>
 							</ul></li>
-						<#if Session["loginUser"]??>
-							<li>
-								 <img src="${Session["loginUser"].imageUrl}"  class="img-circle pointer" style="vertical-align:middle;width: 40px; height: 40px"
-								 onclick="javascript:window.location.href='/user'" id="user-avatar" />
-							</li>
-							<#else>
-							<li>
-								<a href="/user/login" style="color: white;">登陆</a>
-							</li>
-						</#if>	
+<#--						<#if Session["loginUser"]??>-->
+<#--							<li>-->
+<#--								 <img src="${Session["loginUser"].imageUrl}"  class="img-circle pointer" style="vertical-align:middle;width: 40px; height: 40px"-->
+<#--								 onclick="javascript:window.location.href='/user'" id="user-avatar" />-->
+<#--							</li>-->
+<#--							<#else>-->
+<#--							<li>-->
+<#--								<a href="/user/login" style="color: white;">登陆</a>-->
+<#--							</li>-->
+<#--						</#if>	-->
 						
 					</ul>
 				</div>

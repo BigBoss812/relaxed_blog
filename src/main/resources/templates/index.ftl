@@ -28,15 +28,11 @@
 					<!-- Wrapper for slides -->
 					<div class="carousel-inner" role="listbox">
 						<div class="item active">
-							<img src="https://tmlh98.gitee.io/image-repository/img/spring_monkey/lunbo-1.jpg" class="img-size" alt="..."/>
+							<img src="/images/lunbo-1.jpg" class="img-size" alt="..."/>
 							<div class="carousel-caption">...</div>
 						</div>
 						<div class="item">
-							<img src="https://tmlh98.gitee.io/image-repository/img/spring_monkey/lunbo-2.jpg" class="img-size" alt="..."/>
-							<div class="carousel-caption">...</div>
-						</div>
-						<div class="item">
-							<img src="https://tmlh98.gitee.io/image-repository/img/spring_monkey/lunbo-3.jpg" class="img-size" alt="..."/>
+							<img src="/images/lunbo-1.jpg" class="img-size" alt="..."/>
 							<div class="carousel-caption">...</div>
 						</div>
 					</div>
