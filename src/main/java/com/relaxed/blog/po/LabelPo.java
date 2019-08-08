@@ -10,12 +10,10 @@ import java.io.Serializable;
 import java.util.Date;
 
 /**
- * <p>
- *  标签数据库实体定义
- * </p>
- *
- * @author Big Boss
- * @since 2019-08-06
+ * @author jerry
+ * @version 1.0
+ * @description 标签数据库实体定义
+ * @Date 2019/8/7 13:43
  */
 @Data
 @Entity
@@ -34,15 +32,9 @@ public class LabelPo implements Serializable {
     private String name;
 
     /**
-     * 标签描述
-     */
-    @Column(name = "description")
-    private String description;
-
-    /**
      * 标签顺序(0开始)
      */
-    @Column(name = "index")
+    @Column(name = "index",length = 2)
     private Integer index;
 
     /**

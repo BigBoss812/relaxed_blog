@@ -409,7 +409,7 @@ textarea.input{height:auto;}
 .collapse .panel.active .panel-body{display:block;}
 .banner{position:relative;width:100%;overflow:hidden;}
 .carousel{position:relative;list-style:none;padding:0;}
-.carousel .item{display:nones;float:left;position:relative;}
+.carousel .item{display:none;float:left;position:relative;}
 .carousel .active{display:block;}
 .carousel img{display:block;max-width:100%;height:auto;}
 .banner .pointer{position:absolute;bottom:0;padding:15px;}

@@ -11,12 +11,10 @@ import java.time.LocalDateTime;
 import java.util.Date;
 
 /**
- * <p>
- *  文章分类数据库实体定义
- * </p>
- *
- * @author Big Boss
- * @since 2019-08-06
+ * @author jerry
+ * @version 1.0
+ * @description 文章分类数据库实体定义
+ * @Date 2019/8/7 13:43
  */
 @Data
 @Entity
@@ -35,16 +33,11 @@ public class CategoryPo implements Serializable {
     private String name;
 
     /**
-     * 分类关键词
+     * 分类顺序(0开始)
      */
-    @Column(name = "keywords",length = 150)
-    private String keywords;
+    @Column(name = "index",length = 2)
+    private Integer index;
 
-    /**
-     * 分类描述
-     */
-    @Column(name = "description")
-    private String description;
 
     /**
      * 更新时间

@@ -1,10 +1,9 @@
 <#import "./layout/inc.ftl" as inc>
 <#import "./layout/nav.ftl" as nav>
-<#import "./layout/message-js.ftl" as message>
 
 <!DOCTYPE html>
 <html lang="en">
-<@inc.head '首页'>
+<@inc.head 'Big Boss'>
 </@inc.head>
 <body>
 <@nav.topbar "active">
@@ -93,18 +92,10 @@
 						<h2 class="panel-title">热门标签</h2>
 					</div>
 					<div class="panel-body">
-						<a href="#"
-							class="text-white badge badge-secondary font-weight-normal">Spring Boot</a>
-						<a href="#"
-							class="text-white badge badge-secondary font-weight-normal">MangoDB</a>
-						<a href="#" class="text-white badge badge-secondary font-weight-normal">Java</a>
-						<a href="#" class="text-white badge badge-secondary font-weight-normal">Dubbo</a>
-						<a href="#" class="text-white badge badge-secondary font-weight-normal">Ribbon</a>
-						<a href="#" class="text-white badge badge-secondary font-weight-normal">Mysql</a>
-						<a href="#" class="text-white badge badge-secondary font-weight-normal">Linux</a>
-						<a href="#" class="text-white badge badge-secondary font-weight-normal">Solr</a>
-						<a href="#" class="text-white badge badge-secondary font-weight-normal">Redis</a>
-						<a href="#" class="text-white badge badge-secondary font-weight-normal">JVM</a>
+						<#list labelList as label>
+							<a href="#"
+							   class="text-white badge badge-secondary font-weight-normal">${label.name}</a>
+						</#list>
 					</div>
 				</div>
 
@@ -117,7 +108,6 @@
 </body>
 <@inc.script>
 
-<!-- <script src="/asserts/js/apple-data.js"></script> -->
 <script src="https://cdn.bootcss.com/mustache.js/3.0.1/mustache.js"></script>
 <script type="text/x-mustache-template" id="template">
 		<div class="list-group-item"> 
@@ -138,50 +128,8 @@
 		</div> 
 </script>
 
+<script src="/asserts/js/index.js"></script>
 
-<script type="text/javascript">
-	var current = 1; 
-	$(function(){
-		getArticlePage(current);
-		$('#add-article').click(function(){
-			getArticlePage(current);
-		});
-	});
-	
-	function getArticlePage(currPage){
-		$.ajax({
-  		  method: "GET",
-  		  url: '/article',
-  		  data: { 
-  			  currPage: currPage,
-  			  pageSize: 8,
-  			  },
-  		  success: function(data){
-  			  if(data.code == '0'){
-  				var articlePage = data.result.articlePage;
-  				if(articlePage.records == 0){
-					infoNotify('没有更多了!');
-				}
-  				$.each(articlePage.records, function(index, article) {
-  					showArts(article,$('#article-list'));
-  					current = articlePage.current + 1;
-  			    });
-  				  
-  			  }else{
-  				dangerNotify(data.message);
-  			  }
-  		  }
-  		});
-	}
-	
-	function showArts( data ,obj){
-	    var partials = {date: getdays_(data.createTime)}
-		var content = Mustache.render($('#template').html(),data,partials);
-		obj.append(content);
-	}
-
-</script>
 </@inc.script>
-<@message.messageNotify></@message.messageNotify>
 
 </html>

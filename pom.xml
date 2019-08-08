@@ -70,6 +70,52 @@
             <scope>provided</scope>
         </dependency>
 
+        <!-- Bootstrap webjars -->
+        <dependency>
+            <groupId>org.webjars</groupId>
+            <artifactId>bootstrap</artifactId>
+            <version>3.2.0</version>
+        </dependency>
+        <!-- jquery -->
+        <dependency>
+            <groupId>org.webjars</groupId>
+            <artifactId>jquery</artifactId>
+            <version>2.1.1</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.webjars</groupId>
+            <artifactId>AdminLTE</artifactId>
+            <version>2.3.8</version>
+        </dependency>
+        <dependency>
+            <groupId>org.webjars.npm</groupId>
+            <artifactId>bootstrap-table</artifactId>
+            <version>1.14.2</version>
+        </dependency>
+        <!-- wangEditor -->
+        <dependency>
+            <groupId>org.webjars.bower</groupId>
+            <artifactId>wangEditor</artifactId>
+            <version>3.1.1</version>
+        </dependency>
+        <!-- font -->
+        <dependency>
+            <groupId>org.webjars</groupId>
+            <artifactId>font-awesome</artifactId>
+            <version>4.7.0</version>
+        </dependency>
+        <dependency>
+            <groupId>org.webjars</groupId>
+            <artifactId>sweetalert</artifactId>
+            <version>2.1.0</version>
+        </dependency>
+        <dependency>
+            <groupId>org.webjars</groupId>
+            <artifactId>bootstrap-notify</artifactId>
+            <version>3.1.3-1</version>
+        </dependency>
+
     </dependencies>
 
     <!--打包配置-->

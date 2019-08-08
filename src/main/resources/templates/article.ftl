@@ -1,5 +1,5 @@
-<#import "/layout/inc.ftl" as inc>
-<#import "/layout/nav.ftl" as nav>
+<#import "./layout/inc.ftl" as inc>
+<#import "./layout/nav.ftl" as nav>
 <#import "./layout/message-js.ftl" as message>
 
 <!DOCTYPE html>

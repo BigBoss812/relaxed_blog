@@ -18,14 +18,14 @@
 				<div class="collapse navbar-collapse"
 					id="bs-example-navbar-collapse-1">
 					<ul class="nav navbar-nav">
-						<li><a href="#">标签云</a></li>
-						<li><a href="https://github.com/tmlh98" target="_blank">Github</a></li>
+						<#list categoryList as category>
+							<li><a href="#">${category.name}</a></li>
+						</#list>
 					</ul>
 					<form class="navbar-form navbar-left" role="search">
 						<div class="form-group">
 							<input type="text" class="form-control" />
 						</div>
-						<!-- <button type="submit" class="btn btn-default">Submit</button> -->
 					</form>
 					
 					<ul class="nav navbar-nav navbar-right">
@@ -34,19 +34,7 @@
 							data-toggle="dropdown">发布<strong class="caret"></strong></a>
 							<ul class="dropdown-menu">
 								<li><a href="/user/article/publish">文章</a></li>
-								<li><a href="/user/question/publish">问答</a></li>
 							</ul></li>
-<#--						<#if Session["loginUser"]??>-->
-<#--							<li>-->
-<#--								 <img src="${Session["loginUser"].imageUrl}"  class="img-circle pointer" style="vertical-align:middle;width: 40px; height: 40px"-->
-<#--								 onclick="javascript:window.location.href='/user'" id="user-avatar" />-->
-<#--							</li>-->
-<#--							<#else>-->
-<#--							<li>-->
-<#--								<a href="/user/login" style="color: white;">登陆</a>-->
-<#--							</li>-->
-<#--						</#if>	-->
-						
 					</ul>
 				</div>
 			</div>

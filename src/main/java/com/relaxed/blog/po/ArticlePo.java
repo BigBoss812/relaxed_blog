@@ -10,12 +10,10 @@ import java.io.Serializable;
 import java.util.Date;
 
 /**
- * <p>
- *  文章数据库实体定义
- * </p>
- *
- * @author Big Boss
- * @since 2019-08-06
+ * @author jerry
+ * @version 1.0
+ * @description 文章数据库实体定义
+ * @Date 2019/8/7 13:43
  */
 @Data
 @Entity
